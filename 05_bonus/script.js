@@ -16,3 +16,22 @@ const name = 'Mario';
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+const d = new Date();
+const hour = d.getHours();
+// console.log(hour);
+
+// se è <= 13 'Buongiorno ' + name
+// se è >13 && <= 17 'Buon pomeriggio ' + name
+// se è >17 'Buonasera ' + name
+
+if (hour <= 13) {
+    console.log('Buongiorno');
+    
+} else if  (hour <= 17) {
+    console.log('Buon pomeriggio');
+    
+} else {
+    console.log('Buonasera');
+    
+}
