@@ -7,31 +7,37 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
+const d = new Date();
 
 // Dichiara la funzione qui.
 
+function salutations(dayTime, yourName) {
+
+
+    const hour = dayTime.getHours();
+
+    let saluto;
+
+    if (hour <= 13) {
+        saluto = ('Buongiorno' + yourName);
+    } else if (hour <= 17) {
+        saluto = ('Buon pomeriggio' + yourName);
+    } else {
+        saluto = ('Buonasera ' + yourName);
+    }
+
+    return saluto;
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(salutations(d, name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
 
-const d = new Date();
-const hour = d.getHours();
-// console.log(hour);
 
-// se è <= 13 'Buongiorno ' + name
-// se è >13 && <= 17 'Buon pomeriggio ' + name
-// se è >17 'Buonasera ' + name
 
-if (hour <= 13) {
-    console.log('Buongiorno');
-    
-} else if  (hour <= 17) {
-    console.log('Buon pomeriggio');
-    
-} else {
-    console.log('Buonasera');
-    
-}
+
+
