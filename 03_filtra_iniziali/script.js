@@ -10,7 +10,11 @@ function arrStartsWith(letterOrigin, arrOrigin) {
     const arrFinal = [];
 
     for (let i = 0; i < arrOrigin.length; i++) {
-        const element = arrOrigin[i][0]
+        const element = arrOrigin[i][0];
+        // const element = arrOrigin[i]
+        // const intElement = element[0]
+
+       
         
         if (letterOrigin === element) {
             arrFinal.push(arrOrigin[i])

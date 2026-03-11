@@ -11,9 +11,10 @@ function vowelsReturn(startWord) {
     const foundVowel = [];
 
     for (let i = 0; i < word.length; i++) {
-        if (vowels.includes(word[i])) {
+        let currentLetter = word[i];
+        if (vowels.includes(currentLetter)) {
             result++;
-            foundVowel.push(word[i]);
+            foundVowel.push(currentLetter);
         }
     }
 
