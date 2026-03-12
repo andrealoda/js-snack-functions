@@ -27,6 +27,11 @@ return arrFinal
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(arrStartsWith(initialLetter, names));
+const result = arrStartsWith(initialLetter, names);
+
+console.log(result);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+
+// CORREZIONE

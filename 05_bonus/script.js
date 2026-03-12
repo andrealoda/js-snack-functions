@@ -7,14 +7,14 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-const d = new Date();
+// const d = new Date();
 
 // Dichiara la funzione qui.
 
-function salutations(dayTime, yourName) {
+function salutations(yourName) {
 
-
-    const hour = dayTime.getHours();
+    // const hour = d.getHours();
+    const hour = new Date().getHours();
 
     let saluto;
 
@@ -38,6 +38,6 @@ console.log(salutations(d, name));
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
 
 
-
+// CORREZIONE LIVE
 
 

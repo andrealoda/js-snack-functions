@@ -10,26 +10,28 @@ function vowelsReturn(startWord) {
     let result = 0;
     const foundVowel = [];
 
-    for (let i = 0; i < word.length; i++) {
-        let currentLetter = word[i];
+    for (let i = 0; i < startWord.length; i++) {
+        let currentLetter = startWord[i];
         if (vowels.includes(currentLetter)) {
             result++;
             foundVowel.push(currentLetter);
         }
     }
 
-    return result, foundVowel;
+    return result;
 }
 
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(vowelsReturn(word));
+let result = vowelsReturn(word);
+
+console.log(result);
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
 
-
+// CORREZIONE LIVE
 
 
 
