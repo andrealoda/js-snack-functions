@@ -4,19 +4,25 @@ restituisca un saluto seguito dal nome fornito (es. "Ciao [nome]") */
 const userName = 'Mario';
 
 
-// Dichiara la funzione qui.
-function saluto(yourName) {
-    return 'Ciao ' + yourName
-}
+// // Dichiara la funzione qui.
+// function saluto(yourName) {
+//     return 'Ciao ' + yourName
+// }
 
 
-// arrow function
-// const saluto = yourName => 'Ciao ' + yourName;
 
-// Invoca la funzione qui e stampa il risultato in console
+// // arrow function
+// // const saluto = yourName => 'Ciao ' + yourName;
 
-saluto(userName);
+// // Invoca la funzione qui e stampa il risultato in console
 
-//Risultato atteso se si passa 'Mario': // ciao Mario
+// saluto(userName);
 
+// //Risultato atteso se si passa 'Mario': // ciao Mario
+
+// console.log(saluto(userName));
+
+
+const saluto = yourName => 'Ciao ' + yourName;
 console.log(saluto(userName));
+
